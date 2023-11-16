@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date type</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#date").change(function() {
+              var date = $(this).val();
+              if (date == "2023-12-25") {
+                $("#output").html("Hari Natal");
+              } else {
+                $("#output").html("Hari Biasa");
+              }
+            });
+          });
+    </script>
+</head>
+<body>
+    <input action="date.php" type="date" id="date">
+    <div id="output"></div>
+</body>
+</html>
+
